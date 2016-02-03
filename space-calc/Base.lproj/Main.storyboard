@@ -24,13 +24,34 @@
                                     <constraint firstAttribute="width" secondItem="md2-gP-XnQ" secondAttribute="height" multiplier="375:667" id="y9W-jP-JZ5"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7dK-0Q-WSl">
+                                <rect key="frame" x="33" y="59" width="308" height="550"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="iip-O3-1dj">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="UwU-is-t4R"/>
+                                            <constraint firstAttribute="width" constant="308" id="jlu-1c-KkT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-wa-2Wh">
+                                        <rect key="frame" x="0.0" y="80" width="308" height="470"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="308" id="7ov-pm-vcM"/>
+                                            <constraint firstAttribute="height" constant="470" id="p9u-F1-yW7"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="md2-gP-XnQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7M4-hu-OKU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="md2-gP-XnQ" secondAttribute="bottom" id="TI7-mx-e4D"/>
+                            <constraint firstItem="7dK-0Q-WSl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VaK-kX-fTY"/>
                             <constraint firstItem="md2-gP-XnQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="asR-1Q-rU6"/>
                             <constraint firstAttribute="trailing" secondItem="md2-gP-XnQ" secondAttribute="trailing" id="cVu-Jh-i6K"/>
+                            <constraint firstItem="7dK-0Q-WSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTB-Si-WQc"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -41,6 +62,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backpanel" width="620" height="938"/>
+        <image name="counter" width="516" height="133"/>
         <image name="space-bg" width="988" height="946"/>
     </resources>
 </document>
