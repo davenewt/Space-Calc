@@ -105,6 +105,17 @@ class ViewController: UIViewController {
         }
     }
     
+    // set up clear button
+    @IBAction func onClearPressed(sender: AnyObject) {
+        playSound()
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+        outputLbl.text = ""
+        currentOperation = Operation.Empty
+    }
+    
     func playSound() {
         if btnSound.playing {
             btnSound.stop()
