@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -214,12 +219,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="531800823" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tj0-cg-rIu">
+                                <rect key="frame" x="60" y="76" width="254" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="HCi-RL-HKb"/>
+                                    <constraint firstAttribute="height" constant="57" id="UXp-R0-27K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="50"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="az6-Zj-OfJ" firstAttribute="centerX" secondItem="7dK-0Q-WSl" secondAttribute="centerX" id="5YW-zB-jcE"/>
                             <constraint firstItem="md2-gP-XnQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7M4-hu-OKU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eB8-3q-a55" secondAttribute="bottom" id="Ez5-U8-Qve"/>
+                            <constraint firstItem="7dK-0Q-WSl" firstAttribute="trailing" secondItem="Tj0-cg-rIu" secondAttribute="trailing" constant="20" id="GSz-Zs-9FO"/>
                             <constraint firstItem="az6-Zj-OfJ" firstAttribute="centerY" secondItem="7dK-0Q-WSl" secondAttribute="centerY" constant="40" id="Jx4-wl-aPS"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="md2-gP-XnQ" secondAttribute="bottom" id="TI7-mx-e4D"/>
                             <constraint firstItem="7dK-0Q-WSl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VaK-kX-fTY"/>
@@ -228,13 +244,14 @@
                             <constraint firstAttribute="trailing" secondItem="eB8-3q-a55" secondAttribute="trailing" id="neg-wp-y0p"/>
                             <constraint firstItem="eB8-3q-a55" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="noW-ce-hxZ"/>
                             <constraint firstItem="7dK-0Q-WSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTB-Si-WQc"/>
+                            <constraint firstItem="Tj0-cg-rIu" firstAttribute="top" secondItem="7dK-0Q-WSl" secondAttribute="top" constant="16" id="xlR-Bl-rgv"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="428.5"/>
+            <point key="canvasLocation" x="342.5" y="426.5"/>
         </scene>
     </scenes>
     <resources>
