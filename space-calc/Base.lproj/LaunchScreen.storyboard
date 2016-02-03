@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +15,56 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_wars_death_star_square_pixellated" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-Rk-hJC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x6n-Rk-hJC" secondAttribute="height" multiplier="375:667" id="q2B-Nx-mcx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Space-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="guX-lv-4bJ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stormtrooper_lego_pixels" translatesAutoresizingMaskIntoConstraints="NO" id="sft-77-Nkf">
+                                <rect key="frame" x="68" y="263" width="240" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5bM-b3-Nvt"/>
+                                    <constraint firstAttribute="height" constant="242" id="iKZ-h5-DTR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="guX-lv-4bJ" firstAttribute="top" secondItem="x6n-Rk-hJC" secondAttribute="top" constant="20" id="4nC-g9-E0x"/>
+                            <constraint firstItem="x6n-Rk-hJC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5Yt-bf-82I"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="x6n-Rk-hJC" secondAttribute="bottom" id="7GQ-Nx-KdJ"/>
+                            <constraint firstItem="guX-lv-4bJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8dS-7e-loM"/>
+                            <constraint firstItem="sft-77-Nkf" firstAttribute="top" secondItem="guX-lv-4bJ" secondAttribute="top" constant="150" id="Dl8-N0-MgO"/>
+                            <constraint firstItem="guX-lv-4bJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HNf-Ak-ErX"/>
+                            <constraint firstAttribute="trailing" secondItem="x6n-Rk-hJC" secondAttribute="trailing" id="U64-8s-uMh"/>
+                            <constraint firstAttribute="trailing" secondItem="guX-lv-4bJ" secondAttribute="trailing" id="V8e-LI-D2P"/>
+                            <constraint firstItem="x6n-Rk-hJC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YAs-co-6NL"/>
+                            <constraint firstItem="sft-77-Nkf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="50" id="sak-oa-VVV"/>
+                            <constraint firstItem="sft-77-Nkf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="z1X-OA-v8K"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dl8-N0-MgO"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Space-Calc" width="580" height="118"/>
+        <image name="star_wars_death_star_square_pixellated" width="2100" height="2100"/>
+        <image name="stormtrooper_lego_pixels" width="475" height="475"/>
+    </resources>
 </document>
